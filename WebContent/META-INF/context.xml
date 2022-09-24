@@ -1,0 +1,23 @@
+<?xml version="1.0"  encoding="UTF-8" ?>
+<!DOCTYPE Context>
+
+<!-- 
+	このファイルは、META-INFフォルダ内に配置します。 
+	下記の C:/flightData の部分は、flight.accdb を実際に配置したフォルダーを指定します。
+-->
+
+<Context>
+
+	<Resource
+		name="jdbc/sample"
+		driverClassName="net.ucanaccess.jdbc.UcanaccessDriver"
+		url="jdbc:ucanaccess://C:/flightData/flight.accdb"
+		auth="Container"
+		type="javax.sql.DataSource"
+		maxActive="20"
+		maxIdle="5"
+		maxWait="10000"
+		testOnBorrow="true"
+	/>
+
+</Context>
